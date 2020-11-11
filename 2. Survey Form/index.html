@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">Basic survey form</h1>
+        <p id="description">Basic form that you can edit and use in other projects</p>
+    </header>
+    <div class="container">
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input id="name" name="name" type="text" placeholder=" Enter your name" required>
+            <label for="email" id="email-label">E-mail</label>
+            <input id="email" name="email" type="email" placeholder=" Enter your email" required>
+            <label for="number" id="number-label">Age</label>
+            <input id="number" type="number" min="13" max="99" placeholder=" Age">
+
+            <p>What fruit is your favorite?</p>
+            <select id="dropdown" name="fruit" required>
+                <option disabled selected value>Select what you like most</option>
+                <option value="apples">Apples</option>
+                <option value="bananas">Bananas</option>
+                <option value="grapes">Grapes</option>
+                <option value="no-choice">I can't choose</option>
+                <option value="other">Other</option>
+            </select>
+
+            <p>Would you use this form?</p>
+            <label id="radio-form" class="smaller">
+                <input name="usage" value="yes" type="radio" checked />Yes
+            </label>
+            <label class="smaller">
+                <input name="usage" value="maybe" type="radio" />Maybe</label>
+            <label class="smaller">
+                <input name="usage" value="no" type="radio" />No</label>
+
+            <p>
+                Would you like to use checkboxes?
+            </p>
+            <label id="checkbox-form" class="smaller">
+                <input name="checkboxes" value="one" type="checkbox" />One</label>
+            <label class="smaller">
+                <input name="checkboxes" value="two" type="checkbox" />Two</label>
+            <label class="smaller">
+                <input name="checkboxes" value="Three" type="checkbox" />Three</label>
+
+            <p>Want to add a comment?</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+                placeholder="Enter your comment here..."></textarea>
+            <button id="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

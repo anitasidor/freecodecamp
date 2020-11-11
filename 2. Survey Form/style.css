@@ -1,0 +1,68 @@
+body {
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Helvetica', Arial;
+    background-color: rgba(140, 20, 80, 0.2)
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.6rem
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 1.6rem;
+    border-radius: 5px;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    padding: 1.5rem 0 0.6rem;
+}
+
+#name-label,
+#radio-form,
+#checkbox-form {
+    padding-top: 0;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+textarea {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.1rem;
+}
+
+.smaller {
+    font-size: 1.4rem;
+    padding-top: 0.1rem;
+}
+
+textarea {
+    height: 8rem;
+}
+
+button {
+    padding: 0.4rem;
+    margin: 1rem 0;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+    background-color: #FAAADA
+}
