@@ -3,3 +3,46 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "header header header"
+        ". features ."
+        ". how-it-works ."
+        ". pricing ."
+        "footer footer footer"
+
+    ;
+
+}
+
+#header {
+    grid-area: header;
+}
+
+#header-img {
+    display: block;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+#features {
+    grid-area: features;
+}
+
+#how-it-works {
+    grid-area: how-it-works;
+}
+
+#pricing {
+    grid-area: pricing;
+}
+
+footer {
+    grid-area: footer;
+}
