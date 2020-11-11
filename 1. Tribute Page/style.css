@@ -1,0 +1,47 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Helvetica', Arial;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #111
+}
+
+#intro {
+    text-align: center;
+}
+
+header {
+    background-color: #EBE1E7;
+    padding: 2rem 0.5rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+
+#title {
+    font-size: 5.5rem;
+}
+
+img {
+    display: block;
+    margin: 3rem auto 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+#tribute-info {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2.4rem;
+}
+
+#tribute-info-article {
+    margin: 6rem 0 2rem;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem;
+}
