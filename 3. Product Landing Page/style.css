@@ -5,7 +5,6 @@
 }
 
 html {
-    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -202,15 +201,48 @@ body {
 footer {
     grid-area: footer;
     width: 100%;
+    margin: 0 auto;
     background-color: lightgray;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    ;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        ". news ."
+        ". copy ."
     ;
     padding: 20px;
+    position: relative;
+    left: 0;
+
 }
 
 .btn-footer {
     font-size: 10px;
     padding: 5px 10px;
+    margin: 0 10px;
     background-color: whitesmoke;
+}
+
+#email {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+
+.footer-left {
+    grid-area: news;
+}
+
+.footer-left form {
+    display: grid;
+    place-items: center center;
+    margin-bottom: 10px;
+}
+
+.footer-right {
+    grid-area: copy;
+    display: grid;
+    place-items: center center;
 }
