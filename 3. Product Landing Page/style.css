@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -20,7 +25,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgrey;
     position: relative;
-    /* overflow: hidden; */
 }
 
 .sticky-wraper {
@@ -60,6 +64,24 @@ body {
     text-decoration: none;
     color: black;
     line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+    #header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        height: 90px;
+        padding: 10px 20px 10px 20px;
+    }
+
+    #nav-bar ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-link a:hover {
+        opacity: 0.8;
+    }
 }
 
 #features {
