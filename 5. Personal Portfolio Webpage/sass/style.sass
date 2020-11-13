@@ -7,6 +7,7 @@
 
 body
     font-family: $font
+    color: $light-font-color
 
 #navbar
     background-color: $navbar-color
@@ -22,7 +23,6 @@ body
         a
             display: block
             padding: 20px 15px
-            // line-height: 50px
             text-decoration: none
 
             li
@@ -49,7 +49,6 @@ body
         align-items: center
         padding: 10px
         background-color: $welcome-header
-        color: $light-font-color
 
         .big-header
             font-size: 38px
@@ -60,3 +59,27 @@ body
         .big-paragraph
             font-size: 24px
             padding-bottom: 15px
+
+#projects
+    background-color: $projects-color
+    // display: flex
+
+    .projects-header
+        text-align: center
+        padding: 40px 10px
+
+    /* "Automagic" image grid using no media queries */
+    .projects-grid
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+        // grid-template-rows: repeat(auto-fill, minmax(250px, 1fr))
+        grid-gap: 20px
+        width: 90%
+        max-width: 1280px
+        margin: 0 auto
+        margin-bottom: 30px
+
+        .project-image
+            // height: 
+            width: 100%
+            object-fit: contain
