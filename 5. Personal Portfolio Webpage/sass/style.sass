@@ -9,7 +9,7 @@ body
     font-family: $font
 
 #navbar
-    background-color: $base-color
+    background-color: $navbar-color
     position: fixed
     top: 0
     left: 0
@@ -21,7 +21,7 @@ body
 
         a
             display: block
-            padding: 15px 15px
+            padding: 20px 15px
             // line-height: 50px
             text-decoration: none
 
@@ -33,20 +33,30 @@ body
 #welcome-section
     height: 100vh
     width: 100%
-    background-color: gray
+    // background-color: $welcome-section-color
+    background-image: url('https://cdn.pixabay.com/photo/2019/09/02/06/08/texture-4446604_1280.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
     display: flex
     justify-content: center
     align-items: center
+
     .welcome-section-wraper
         width: 100%
         display: flex
         flex-direction: column
         align-items: center
         padding: 10px
-        background-color: rgba(0, 0, 0, 0.4)
+        background-color: $welcome-header
         color: $light-font-color
+
         .big-header
             font-size: 38px
-            padding-bottom: 10px
+            padding-bottom: 15px
+            padding-top: 15px
+            text-align: center
+
         .big-paragraph
             font-size: 24px
+            padding-bottom: 15px
