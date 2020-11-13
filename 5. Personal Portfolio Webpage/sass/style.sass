@@ -1,1 +1,52 @@
 @import 'variables'
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    font-family: $font
+
+#navbar
+    background-color: $base-color
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+
+    ul
+        display: flex
+        justify-content: flex-end
+
+        a
+            display: block
+            padding: 15px 15px
+            // line-height: 50px
+            text-decoration: none
+
+            li
+                list-style: none
+                color: $light-font-color
+                letter-spacing: 1px
+
+#welcome-section
+    height: 100vh
+    width: 100%
+    background-color: gray
+    display: flex
+    justify-content: center
+    align-items: center
+    .welcome-section-wraper
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 10px
+        background-color: rgba(0, 0, 0, 0.4)
+        color: $light-font-color
+        .big-header
+            font-size: 38px
+            padding-bottom: 10px
+        .big-paragraph
+            font-size: 24px

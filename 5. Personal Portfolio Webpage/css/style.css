@@ -1,1 +1,81 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color: #c754ae;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#navbar ul a {
+  display: block;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+#navbar ul a li {
+  list-style: none;
+  color: #f1f1f1;
+  letter-spacing: 1px;
+}
+
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#welcome-section .welcome-section-wraper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #f1f1f1;
+}
+
+#welcome-section .welcome-section-wraper .big-header {
+  font-size: 38px;
+  padding-bottom: 10px;
+}
+
+#welcome-section .welcome-section-wraper .big-paragraph {
+  font-size: 24px;
+}
+/*# sourceMappingURL=style.css.map */
